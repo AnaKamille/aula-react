@@ -5,10 +5,14 @@ import Home from "./pages/Home"
 function App() {
 
   return (
-    <div className="App">
-      <Home title="Hello World 2"/>
+    <div className="app">
+      
+        <Home title=""/>
+      
     </div>
   );
 }
 
 export default App;
+
+console.log(App)

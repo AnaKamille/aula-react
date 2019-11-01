@@ -15,16 +15,20 @@ function Home(props) {
 
 
     return (
-        <div>
-            <h1>{props.title}</h1>
+        <div className="title">
+        <p>{props.title}</p>
+        <div className="container">
+           
             {users.map(user => {
                 return <Card 
                             key={user.id}
                             first_name={user.first_name} 
                             avatar={user.avatar} 
                             last_name={user.last_name} 
+                            email={user.email}
                         />
             })}
+        </div>
         </div>
     )
 }
